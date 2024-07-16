@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transactions</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styel.css">
+</head>
+
+<body>
+
+    <h1 class="text-center py-4">Customer Transactions</h1>
+
+    <div class="search container">
+        <input type="text" placeholder="Search by customer name or amount" class="form-control p-2" id="search_input">
+    </div>
+
+    <div class="container tabel mt-5">
+        <table class="table mt-4 text-center">
+            <thead>
+                <tr>
+                    <th class="bg-secondary p-3 fs-4">Customer Name</th>
+                    <th class="bg-secondary p-3 fs-4">Total Transaction Amount</th>
+                    <th class="bg-secondary p-3 fs-4">Transactions per day</th>
+                </tr>
+            </thead>
+            <tbody id="transactionTable">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <h1 class="text-center">Please click on View to show transactions graph.</h1>
+    <div id="chartContainer" class="w-50 mx-auto">
+        <canvas id="transactionChart"></canvas>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

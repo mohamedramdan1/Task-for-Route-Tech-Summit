@@ -1,0 +1,28 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  border: 1px solid  teal;
+  padding: 8px;
+  color: tomato !important;
+}
+td {
+  border: 1px solid teal;
+  padding: 8px;
+
+}
+
+.btn{
+  background-color: green;
+  color: white;
+  border: 0px solid green;
+}
+.btn:hover
+{
+  background-color: green;
+  color: white;
+  border:   0px solid green;
+}
